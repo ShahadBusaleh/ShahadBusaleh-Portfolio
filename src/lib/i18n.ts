@@ -4,6 +4,7 @@ export const navItems = {
   en: [
     { href: "#home", label: "Home" },
     { href: "#projects", label: "Projects" },
+    { href: "#experience", label: "Experience" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#contact", label: "Contact" },
@@ -11,6 +12,7 @@ export const navItems = {
   ar: [
     { href: "#home", label: "الرئيسية" },
     { href: "#projects", label: "المشاريع" },
+    { href: "#experience", label: "الخبرة" },
     { href: "#about", label: "عني" },
     { href: "#skills", label: "المهارات" },
     { href: "#contact", label: "تواصل" },
@@ -29,6 +31,7 @@ export const ui = {
     downloadResume: "Resume",
     experience: "Experience",
     education: "Education",
+    training: "Training",
     certifications: "Certifications",
     languages: "Languages",
     sendEmail: "Send Email",
@@ -37,6 +40,7 @@ export const ui = {
       enterprise: "Enterprise",
       ai: "AI Product",
       data: "Data & Analytics",
+      mobile: "Mobile",
     },
   },
   ar: {
@@ -50,6 +54,7 @@ export const ui = {
     downloadResume: "السيرة الذاتية",
     experience: "الخبرة",
     education: "التعليم",
+    training: "التدريب",
     certifications: "الشهادات",
     languages: "اللغات",
     sendEmail: "إرسال بريد",
@@ -58,6 +63,7 @@ export const ui = {
       enterprise: "مؤسسي",
       ai: "منتج ذكاء اصطناعي",
       data: "بيانات وتحليلات",
+      mobile: "تطبيق جوال",
     },
   },
 };

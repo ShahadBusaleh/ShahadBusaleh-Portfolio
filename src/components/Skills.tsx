@@ -6,7 +6,11 @@ import { ui } from "@/lib/i18n";
 import { Reveal } from "./Reveal";
 
 const skillGroups = [
-  { key: "frontend" as const, labelEn: "Front-End", labelAr: "واجهات أمامية" },
+  {
+    key: "frontend" as const,
+    labelEn: "Front-End & Mobile",
+    labelAr: "واجهات أمامية وتطبيقات جوال",
+  },
   { key: "backend" as const, labelEn: "Back-End", labelAr: "خلفية" },
   { key: "ai" as const, labelEn: "AI & Integration", labelAr: "ذكاء اصطناعي" },
   { key: "cloud" as const, labelEn: "Cloud & Tools", labelAr: "سحابة وأدوات" },

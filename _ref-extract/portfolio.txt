@@ -274,7 +274,7 @@ Production-Level Collaboration
 
 **Organization:** Al Gosaibi
 **Product:** Minutes of Meeting (MOM) — AI Meeting Assistant
-**Production URL:** `https://itonline.algosaibi.sa/mom/`
+**Production URL:** [internal — redacted]
 **Role:** Enterprise integration, deployment, and full-stack delivery
 
 ---
@@ -321,25 +321,22 @@ Manual meeting minutes are slow, inconsistent, and hard to share across departme
 Employee Browser (HTTPS)
 │
 ▼
-DMSSRV — IT Online Portal (ASP.NET Core + IIS)
-Site: Issue-Return-System
-Pool: issue-return-system
-Path: C:\inetpub\IssueReturnSystem
+Portal Server — IT Online Portal (ASP.NET Core + IIS) [internal host — redacted]
 · Entra ID cookie authentication
 · YARP reverse proxy
 · Injects X-Forwarded-By-Portal, X-User-OID, X-User-Email, X-User-Name, X-User-Role
 │
-├── /mom/*     → MOM server :3118 (Next.js)
-└── /mom-api/* → MOM server :5167 (FastAPI)
+├── /mom/*     → MOM server (Next.js)
+└── /mom-api/* → MOM server (FastAPI)
 
-MOM Server (172.16.1.154)
-· MeetingAssistant-Frontend  (Next.js, port 3118, bind 0.0.0.0)
-· MeetingAssistant-Backend   (FastAPI, port 5167, bind 0.0.0.0)
-· LM Studio                  (port 1234)
+MOM Server [internal host — redacted]
+· MeetingAssistant-Frontend  (Next.js)
+· MeetingAssistant-Backend   (FastAPI)
+· LM Studio
 · SQLite                     (meeting_minutes.db)
 ```
 
-**Critical deployment rule:** Portal changes go on **DMSSRV only**. MOM service changes go on the **MOM server only**.
+**Critical deployment rule:** Portal changes go on the portal server only. MOM service changes go on the MOM server only.
 
 ---
 
@@ -397,7 +394,7 @@ MOM Server (172.16.1.154)
 ## Core User Journey
 
 1. Employee logs into **IT Online Portal** (Entra ID).
-2. Opens **Meeting Assistant** → `https://itonline.algosaibi.sa/mom/`.
+2. Opens **Meeting Assistant** in the IT Online Portal [internal URL — redacted].
 3. **Records** meeting (mic permission).
 4. **Transcript** appears live (browser speech engine).
 5. Stops recording → transcripts saved to SQLite.
@@ -438,7 +435,7 @@ powershell -ExecutionPolicy Bypass -File "$Root\scripts\verify-deployment.ps1" -
 ## Acceptance Criteria (Production Sign-Off)
 
 - [ ] Portal loads without 500.30
-- [ ] `https://itonline.algosaibi.sa/mom/` loads while logged in
+- [ ] Portal loads the Meeting Assistant while logged in [internal URL — redacted]
 - [ ] Record 30s with speech → transcript visible after stop
 - [ ] `POST /mom-api/recording/save-transcripts` → 200
 - [ ] Template dropdown shows **Minutes of Meeting** + **General Summary**

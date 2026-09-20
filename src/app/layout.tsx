@@ -20,10 +20,14 @@ const notoArabic = Noto_Sans_Arabic({
 export const metadata: Metadata = {
   title: "Shahad Busaleh — AI Application Developer",
   description:
-    "Portfolio of Shahad Busaleh — AI Application Developer building LLM-integrated products and enterprise AI systems.",
+    "Portfolio of Shahad Busaleh — AI Application Developer building LLM-integrated products, agentic AI systems, and enterprise applications.",
   keywords: [
     "Shahad Busaleh",
     "AI Application Developer",
+    "Agentic AI",
+    "Multi-Agent Systems",
+    "LangChain",
+    "RAG",
     "Full Stack",
     "Next.js",
     "ASP.NET",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shahad Busaleh — AI Application Developer",
     description:
-      "AI-powered applications, 1st-place travel platform, and enterprise meeting systems.",
+      "AI-powered applications, agentic AI systems, a 1st-place travel platform, and enterprise integrations.",
     type: "website",
   },
 };

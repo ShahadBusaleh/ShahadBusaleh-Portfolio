@@ -1,4 +1,4 @@
-export type ProjectCategory = "enterprise" | "ai" | "data";
+export type ProjectCategory = "enterprise" | "ai" | "data" | "mobile";
 
 export type Project = {
   id: string;
@@ -19,6 +19,31 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    id: "yusor",
+    title: "Yusor — Multi-Agent HR Specialist System",
+    titleAr: "يُسر — نظام وكلاء متعددين لشؤون الموظفين",
+    role: "Agentic AI Bootcamp Capstone (SDA & WeCloudData)",
+    roleAr: "مشروع تخرج معسكر Agentic AI (SDA و WeCloudData)",
+    description:
+      "An AI HR assistant that gives employees instant, policy-grounded answers and self-service handling of routine HR requests.",
+    descriptionAr:
+      "مساعد ذكاء اصطناعي لشؤون الموظفين يقدّم إجابات فورية مستندة إلى السياسات، ويعالج طلبات الموارد البشرية الروتينية ذاتيًا.",
+    highlights: [
+      "Multi-agent design: routine requests are automated end-to-end; ambiguous or high-risk cases are escalated to human review",
+      "Every answer is traceable to its source policy",
+      "Sensitive data protected by design; all actions logged for audit",
+    ],
+    highlightsAr: [
+      "تصميم متعدد الوكلاء: أتمتة كاملة للطلبات الروتينية، وتصعيد الحالات الغامضة أو عالية الخطورة للمراجعة البشرية",
+      "كل إجابة قابلة للتتبع إلى السياسة المصدر لها",
+      "حماية البيانات الحساسة بالتصميم، وتسجيل جميع الإجراءات لأغراض التدقيق",
+    ],
+    stack: ["Python", "LangChain", "RAG"],
+    category: "ai",
+    featured: true,
+    badge: "In Progress",
+  },
   {
     id: "meeting-assistant",
     title: "AI Meeting Assistant",
@@ -52,32 +77,44 @@ export const projects: Project[] = [
     ],
     category: "enterprise",
     featured: true,
-    github: "https://github.com/ShahadBusaleh/AI-MeetingAssistantSystem",
     badge: "Production",
   },
   {
     id: "travel-in",
     title: "Travel-In — AI Travel Concierge",
     titleAr: "Travel-In — مساعد السفر الذكي",
-    role: "Full Stack Developer & AI System Designer",
-    roleAr: "مطورة Full Stack ومصممة نظام ذكاء اصطناعي",
+    role: "Full Stack Developer — Architecture, API Design, AI Integration, Database, Figma-to-UI Implementation",
+    roleAr: "مطورة Full Stack — البنية، تصميم الواجهات البرمجية، تكامل الذكاء الاصطناعي، قاعدة البيانات، وتحويل تصاميم Figma إلى واجهات",
     description:
       "1st Place AI travel concierge at Rkiza V-Camp 2026. Generates personalized, editable itineraries with Google Gemini AI, and integrates real-time flight and hotel APIs for dynamic pricing and booking.",
     descriptionAr:
       "المركز الأول في Rkiza V-Camp 2026. منصة سفر ذكية تولّد خططاً قابلة للتعديل عبر Google Gemini AI، مع تكامل واجهات طيران وفنادق حية للتسعير والحجز.",
     highlights: [
-      "1st Place — Rkiza V-Camp 2026; production-grade platform shipped in 7 days",
-      "Google Gemini AI itinerary generation with Prisma + PostgreSQL",
-      "Integrated real-time flight and hotel APIs; Clerk auth and rate limiting",
-      "Team project — architecture, deployment, and performance optimization shared with teammates",
+      "1st Place — Rkiza V-Camp 2026; Gemini-generated structured itineraries",
+      "Live flight and hotel search with multi-key API failover; real-time pricing and checkout",
+      "Clerk auth with server-side route protection; per-IP rate limiting, CSRF validation, and Zod sanitization",
+      "Team: Elaf Albelali (UI/UX), Ziyad Tammar (security, performance, deployment), Saud Alotaibi (business analysis)",
     ],
     highlightsAr: [
-      "المركز الأول — Rkiza V-Camp 2026؛ منصة إنتاجية خلال 7 أيام",
-      "توليد خطط سفر عبر Google Gemini مع Prisma و PostgreSQL",
-      "تكامل واجهات طيران وفنادق حية؛ مصادقة Clerk وتحديد معدل الطلبات",
-      "مشروع جماعي — البنية والنشر وتحسين الأداء بمشاركة الفريق",
+      "المركز الأول — Rkiza V-Camp 2026؛ خطط رحلات منظمة يولّدها Gemini",
+      "بحث حي عن الرحلات والفنادق مع تبديل تلقائي بين مفاتيح API متعددة؛ تسعير حي وإتمام الحجز",
+      "مصادقة Clerk مع حماية المسارات من جهة الخادم؛ تحديد معدل الطلبات لكل IP، وتحقق CSRF، وتنقية المدخلات عبر Zod",
+      "الفريق: إلاف البلعلي (UI/UX)، زياد تمار (الأمان والأداء والنشر)، سعود العتيبي (تحليل الأعمال)",
     ],
-    stack: ["Next.js", "Google Gemini AI", "Prisma", "PostgreSQL", "Clerk"],
+    stack: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind",
+      "shadcn/ui",
+      "Clerk",
+      "Prisma",
+      "PostgreSQL",
+      "Vercel AI SDK",
+      "Google Gemini 2.5 Flash",
+      "SerpApi",
+      "Resend",
+      "Zod",
+    ],
     category: "ai",
     featured: true,
     live: "https://travelin.blog/",
@@ -113,8 +150,7 @@ export const projects: Project[] = [
       "IIS",
     ],
     category: "enterprise",
-    featured: true,
-    github: "https://github.com/ShahadBusaleh/IT-EquipmentSystem",
+    featured: false,
     badge: "Enterprise",
   },
   {
@@ -149,27 +185,27 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "ai-writing",
-    title: "AI Writing Platform",
-    titleAr: "منصة الكتابة بالذكاء الاصطناعي",
-    role: "Full Stack Developer",
-    roleAr: "مطورة Full Stack",
+    id: "endless-words",
+    title: "Endless Words — AI-Powered Platform for Creative Writing & Book Design",
+    titleAr: "Endless Words — منصة ذكاء اصطناعي للكتابة الإبداعية وتصميم الكتب",
+    role: "Full Stack / Mobile Developer | Graduation Project",
+    roleAr: "مطورة Full Stack وتطبيقات جوال | مشروع تخرج",
     description:
-      "AI-powered platform for content generation, grammar correction, and creative idea enhancement — connecting writers and readers in a shared community.",
+      "An AI-powered mobile platform that helps writers generate ideas, develop characters, get grammar and style feedback, and design book covers — while letting readers browse, rate, and discuss published work in a shared community. Built as a Bachelor's graduation project in Computer Information Systems at Imam Abdulrahman Bin Faisal University.",
     descriptionAr:
-      "منصة مدعومة بالذكاء الاصطناعي لتوليد المحتوى وتصحيح القواعد وتعزيز الأفكار — تربط الكُتّاب والقراء في مجتمع مشترك.",
+      "منصة جوال مدعومة بالذكاء الاصطناعي تساعد الكُتّاب على توليد الأفكار وتطوير الشخصيات والحصول على ملاحظات نحوية وأسلوبية وتصميم أغلفة الكتب، بينما يمكن للقراء تصفح الأعمال المنشورة وتقييمها ومناقشتها ضمن مجتمع مشترك. أُنجز كمشروع تخرج لبكالوريوس نظم المعلومات الحاسوبية في جامعة الإمام عبدالرحمن بن فيصل.",
     highlights: [
-      "OpenAI API integration for grammar and content enhancement",
-      "End-to-end publishing and user interaction system",
-      "ASP.NET Core backend with community features",
+      "AI-assisted writing tools — idea generation, character development, and grammar/style enhancement — powered by OpenAI and Gemini APIs",
+      "Reader community features: browsing, ratings, comments, and following authors, plus AI-assisted book cover design",
+      "Built with Flutter for cross-platform mobile delivery and an ASP.NET Core backend with a relational database",
     ],
     highlightsAr: [
-      "تكامل OpenAI API للقواعد وتحسين المحتوى",
-      "نظام نشر وتفاعل مستخدمين متكامل",
-      "خلفية ASP.NET Core مع ميزات مجتمعية",
+      "أدوات كتابة مدعومة بالذكاء الاصطناعي — توليد الأفكار، وتطوير الشخصيات، وتحسين القواعد والأسلوب — عبر واجهتي OpenAI وGemini",
+      "ميزات مجتمعية للقراء: التصفح والتقييم والتعليقات ومتابعة الكُتّاب، إضافة إلى تصميم أغلفة الكتب بالذكاء الاصطناعي",
+      "مبني بـ Flutter للتطوير الجوال متعدد المنصات وخلفية ASP.NET Core مع قاعدة بيانات علائقية",
     ],
-    stack: ["ASP.NET Core", "OpenAI API", "C#", "SQL"],
-    category: "ai",
+    stack: ["Flutter", "Dart", "ASP.NET Core", "SQL Server", "Firebase", "OpenAI API"],
+    category: "mobile",
     featured: false,
   },
   {
@@ -192,7 +228,7 @@ export const projects: Project[] = [
       "لوحات Tableau تفاعلية لتخطيط الموارد",
       "توصيات استراتيجية لعمليات IT",
     ],
-    stack: ["Tableau", "Excel", "Python", "Data Analysis"],
+    stack: ["Excel", "Tableau"],
     category: "data",
     featured: false,
   },
@@ -207,6 +243,8 @@ export const skills = {
     "React",
     "Next.js",
     "Tailwind CSS",
+    "Flutter",
+    "Dart",
   ],
   backend: [
     "Python",
@@ -224,6 +262,9 @@ export const skills = {
     "Google Gemini AI",
     "LM Studio",
     "Prompt Engineering",
+    "Multi-Agent System Design",
+    "Agent Guardrails & Observability",
+    "LLM Evaluation",
     "LangChain (in progress)",
     "RAG (in progress)",
   ],
@@ -235,6 +276,7 @@ export const skills = {
     "IIS",
     "Clerk Auth",
     "MS Graph",
+    "Firebase",
   ],
   data: ["SQL", "Tableau", "Power BI", "Pandas", "EF Core"],
 };
