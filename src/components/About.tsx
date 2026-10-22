@@ -12,19 +12,21 @@ const education = {
 const training = {
   en: {
     title: "Agentic AI Bootcamp — SDA & WeCloudData",
-    period: "Aug 2026 – Present (in progress)",
+    period: "Aug 2026 – Oct 2026 · Completed",
     description:
-      "Full-time program covering Python & ML fundamentals, GenAI, LLM evaluation, prompt engineering, RAG, LangChain, agent memory and planning, multi-agent orchestration, guardrails and safety, and agent observability.",
+      "Full-time intensive program covering Python & ML fundamentals, GenAI, LLM evaluation, prompt engineering, RAG, LangChain, agent memory and planning, multi-agent orchestration, guardrails and safety, and agent observability. Capstone: Yusor, a bilingual multi-agent HR assistant.",
   },
   ar: {
     title: "معسكر Agentic AI — SDA وWeCloudData",
-    period: "أغسطس 2026 – حاليًا (قيد التنفيذ)",
+    period: "أغسطس 2026 – أكتوبر 2026 · مكتمل",
     description:
-      "برنامج تدريبي بدوام كامل يغطي أساسيات Python والتعلم الآلي، والذكاء الاصطناعي التوليدي، وتقييم النماذج اللغوية، وهندسة الأوامر، وRAG، وLangChain، وذاكرة الوكلاء وتخطيطهم، وتنسيق الوكلاء المتعددين، والضوابط والسلامة، ومراقبة أداء الوكلاء.",
+      "برنامج تدريبي مكثف بدوام كامل يغطي أساسيات Python والتعلم الآلي، والذكاء الاصطناعي التوليدي، وتقييم النماذج اللغوية، وهندسة الأوامر، وRAG، وLangChain، وذاكرة الوكلاء وتخطيطهم، وتنسيق الوكلاء المتعددين، والضوابط والسلامة، ومراقبة أداء الوكلاء. مشروع التخرج: يُسر، مساعد موارد بشرية متعدد الوكلاء ثنائي اللغة.",
   },
 };
 
 const certifications = [
+  "Agentic AI — Saudi Digital Academy (2026)",
+  "Power BI Bootcamp — Qafza Tech (2026)",
   "Azure AI Fundamentals — Microsoft",
   "Prerequisite Courses of Artificial Intelligence, Python Basics — Coursera",
   "ChatGPT Prompt Engineering for Developers — DeepLearning.AI",

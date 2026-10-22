@@ -7,6 +7,24 @@ import { Reveal } from "./Reveal";
 const experience = [
   {
     en: {
+      role: "AI Committee Member (Volunteer)",
+      company: "SDC | Saudi Developers Community",
+      period: "Sep 2026 – Present",
+      points: [
+        "Translate AI and tech research into accessible content for the developer community",
+      ],
+    },
+    ar: {
+      role: "عضوة لجنة الذكاء الاصطناعي (تطوع)",
+      company: "SDC | المجتمع السعودي للمطورين",
+      period: "سبتمبر 2026 – حاليًا",
+      points: [
+        "ترجمة أبحاث الذكاء الاصطناعي والتقنية إلى محتوى مفهوم لمجتمع المطورين",
+      ],
+    },
+  },
+  {
+    en: {
       role: "Software Developer, Trainee (Tamheer)",
       company: "Khalifa A. Algosaibi Group, Dammam",
       period: "Dec 2025 – Jun 2026",

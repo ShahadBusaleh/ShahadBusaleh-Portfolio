@@ -13,7 +13,7 @@ export const profile = {
     credly: "https://www.credly.com/users/shahad-busaleh/badges/credly",
   },
   summary:
-    "AI Application Developer focused on building AI-powered applications — from LLM-integrated products to backend systems that put AI into production. Shipped a 1st-place AI travel platform in 7 days and enterprise meeting & operations tools integrated into corporate portals.",
+    "AI Application Developer building agentic AI systems and the full-stack applications around them — from architecture to production. Built Yusor, a bilingual multi-agent HR assistant (Agentic AI Bootcamp capstone), and Sada, a multi-agent audience engagement platform at the AgentX Hackathon. Won 1st place at Rkiza V-Camp 2026 with Travel-In, and shipped enterprise meeting & operations tools integrated into corporate portals.",
   summaryAr:
-    "مطورة تطبيقات ذكاء اصطناعي تبني منتجات مدعومة بـ LLM وأنظمة خلفية تضع الذكاء الاصطناعي في الإنتاج. ساهمت في منصة سفر فائزة بالمركز الأول خلال 7 أيام، وأدوات اجتماعات وعمليات مؤسسية مدمجة في بوابات الشركات.",
+    "مطورة تطبيقات ذكاء اصطناعي تبني أنظمة وكلاء ذكية والتطبيقات المتكاملة حولها، من البنية حتى الإنتاج. بنت يُسر، مساعد موارد بشرية متعدد الوكلاء ثنائي اللغة (مشروع تخرج معسكر Agentic AI)، وصدى، منصة متعددة الوكلاء لتفاعل الجمهور في هاكاثون AgentX. فازت بالمركز الأول في Rkiza V-Camp 2026 مع Travel-In، وطوّرت أدوات اجتماعات وعمليات مؤسسية مدمجة في بوابات الشركات.",
 };
